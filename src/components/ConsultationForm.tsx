@@ -14,7 +14,7 @@ const ConsultationForm = () => {
               width="450"
             />
             <div className="bg-[#f7941d] text-white font-semibold text-center mt-4 py-3 rounded-md max-w-[450px]">
-              <p>Chuyên gia SUNNY</p>
+              <p>Chuyên gia Kis</p>
               <p>6 năm kinh nghiệm tư vấn du học Hàn.</p>
             </div>
           </div>

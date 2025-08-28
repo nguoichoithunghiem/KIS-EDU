@@ -13,6 +13,7 @@ import avatar03 from "../assets/avatar-03.jpg";
 import avatar04 from "../assets/avatar-04.jpg";
 import duhochangquoc from "../assets/duhochangquoc.jpg";
 import soongsil from "../assets/soongsil-0-1.jpg";
+import ConsultationForm from "../components/ConsultationForm";
 
 const images = [slide1, slide2, slide3];
 
@@ -479,7 +480,7 @@ const Home = () => {
         {/* Đường kẻ */}
         <div className="flex-1 border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-nowrap gap-4 w-5/6 mx-auto mt-6 overflow-x-auto">
+      <div className="flex flex-nowrap gap-4 w-5/6 mx-auto mt-6 overflow-x-auto mb-5">
         <img
           src={soongsil}
           alt=""
@@ -541,6 +542,7 @@ const Home = () => {
           className="w-32 h-32 object-cover rounded-lg flex-shrink-0"
         />
       </div>
+      <ConsultationForm />
     </div>
   );
 };
