@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#04339f] px-4 py-3 flex justify-center">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#04339f] px-4 py-3 flex justify-center">
       <div className="flex items-center justify-between max-w-7xl w-full">
         {/* Logo */}
         <a className="flex items-center" href="#">
@@ -109,7 +109,14 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li className="cursor-pointer select-none">ĐĂNG KÝ TƯ VẤN</li>
+            <li className="cursor-pointer select-none">
+              <Link
+                to="/consultationform"
+                className="text-inherit no-underline"
+              >
+                ĐĂNG KÝ TƯ VẤN
+              </Link>
+            </li>
           </ul>
           <form className="relative flex items-center ml-6">
             <input
