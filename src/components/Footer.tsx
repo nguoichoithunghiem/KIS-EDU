@@ -5,17 +5,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:space-x-20">
         <div className="flex-1 space-y-6 text-[13px] leading-tight">
           <div>
-            <h3 className="font-bold text-[14px] mb-3">
-              TRUNG TÂM DU HỌC SUNNY
-            </h3>
+            <h3 className="font-bold text-[14px] mb-3">TRUNG TÂM DU HỌC KIS</h3>
             <ul className="list-disc list-inside space-y-1 text-[13px]">
               <li>
-                Chủ sở hữu: Công ty TNHH Hợp Tác Phát Triển Sunny International
+                Chủ sở hữu: Công ty TNHH Hợp Tác Phát Triển KIS International
               </li>
-              <li>Người đại diện pháp lý: Trần Thị Hồng Nhung</li>
+              <li>Người đại diện pháp lý: Võ Văn Định</li>
               <li>
-                Giấy phép kinh doanh số: 0108189720 ( Cấp tại sở kế hoạch đầu tư
-                thành phố Hà Nội)
+                Giấy phép kinh doanh số: 0319022858 ( Cấp tại Thuế cơ sở 16
+                Thành phố Hồ Chí Minh)
               </li>
               <li>
                 Giấy phép tư vấn du học: 2779/GCN - SGDĐT (Cấp bởi Sở Giáo Dục

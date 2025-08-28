@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../images/logo.jpg";
 import { Search, Menu, X, Phone, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
@@ -14,12 +15,8 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl w-full">
         {/* Logo */}
         <a className="flex items-center" href="#">
-          <img
-            alt="Sunny logo"
-            className="w-8 h-8"
-            src="https://storage.googleapis.com/a1aa/image/2ee34621-0db4-4db7-1f38-9cd664901850.jpg"
-          />
-          <span className="text-white font-bold text-sm ml-1">SUNNY</span>
+          <img alt="Sunny logo" className="w-10 h-10" src={logo} />
+          <span className="text-white font-bold text-sm ml-1">KIS VISA</span>
         </a>
 
         {/* Desktop menu + search */}
@@ -27,7 +24,7 @@ const Navbar = () => {
           <ul className="flex space-x-6 text-white font-bold text-sm items-center">
             <li className="relative group cursor-pointer select-none">
               <div className="flex items-center">
-                VỀ SUNNY <i className="fas fa-chevron-down ml-1 text-xs"></i>
+                VỀ KIS <i className="fas fa-chevron-down ml-1 text-xs"></i>
               </div>
 
               {/* Submenu */}
