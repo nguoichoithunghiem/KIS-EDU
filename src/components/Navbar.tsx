@@ -3,6 +3,7 @@ import logo from "../images/logo.jpg";
 import { Search, Menu, X, Phone, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -14,10 +15,10 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#04339f] px-4 py-3 flex justify-center">
       <div className="flex items-center justify-between max-w-7xl w-full">
         {/* Logo */}
-        <a className="flex items-center" href="#">
+        <Link className="flex items-center" to="/">
           <img alt="Sunny logo" className="w-10 h-10" src={logo} />
           <span className="text-white font-bold text-sm ml-1">KIS VISA</span>
-        </a>
+        </Link>
 
         {/* Desktop menu + search */}
         <div className="hidden lg:flex items-center space-x-8 flex-grow justify-center">
@@ -33,7 +34,7 @@ const Navbar = () => {
                  group-hover:opacity-100 group-hover:visible transition-all duration-200 w-40"
               >
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Giới thiệu
+                  <Link to="/contact">Liên hệ</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Tầm nhìn
@@ -177,9 +178,8 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${
-                    openMenu === "sunny" ? "underline decoration-white" : ""
-                  }`}
+                  className={`${openMenu === "sunny" ? "underline decoration-white" : ""
+                    }`}
                 >
                   VỀ SUNNY
                 </span>
@@ -211,9 +211,8 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${
-                    openMenu === "duhoc" ? "underline decoration-white" : ""
-                  }`}
+                  className={`${openMenu === "duhoc" ? "underline decoration-white" : ""
+                    }`}
                 >
                   DU HỌC HÀN QUỐC
                 </span>
@@ -245,9 +244,8 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${
-                    openMenu === "daotao" ? "underline decoration-white" : ""
-                  }`}
+                  className={`${openMenu === "daotao" ? "underline decoration-white" : ""
+                    }`}
                 >
                   ĐÀO TẠO TIẾNG HÀN
                 </span>
@@ -279,9 +277,8 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${
-                    openMenu === "tintuc" ? "underline decoration-white" : ""
-                  }`}
+                  className={`${openMenu === "tintuc" ? "underline decoration-white" : ""
+                    }`}
                 >
                   TIN TỨC
                 </span>
@@ -313,9 +310,8 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${
-                    openMenu === "tuvan" ? "underline decoration-white" : ""
-                  }`}
+                  className={`${openMenu === "tuvan" ? "underline decoration-white" : ""
+                    }`}
                 >
                   ĐĂNG KÝ TƯ VẤN
                 </span>
