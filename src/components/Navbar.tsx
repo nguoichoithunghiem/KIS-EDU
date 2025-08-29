@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import logo from "../images/logo.jpg";
 import { Search, Menu, X, Phone, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { mockNews } from "../data/mockData";
+import { categories } from "../utils/formatUrl";
+import { slugify } from "../utils/formatUrl";
 
 
 const Navbar = () => {
@@ -99,15 +102,19 @@ const Navbar = () => {
                 className="absolute left-0 top-full mt-2 bg-white/50 text-black shadow-lg opacity-0 invisible 
                  group-hover:opacity-100 group-hover:visible transition-all duration-200 w-40"
               >
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Giới thiệu
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Tầm nhìn
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Sứ mệnh
-                </li>
+                {categories.map((cat, index) => (
+                  <li
+                    key={index}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  >
+                    <Link
+                      to={`/category/${slugify(cat)}`}
+                      className="block w-full h-full"
+                    >
+                      {cat}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="cursor-pointer select-none">
