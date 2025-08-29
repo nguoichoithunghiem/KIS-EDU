@@ -3,8 +3,8 @@ import React from "react";
 const ConsultationForm = () => {
   return (
     <div>
-      <div className="max-w-6xl mx-auto p-6 bg-[#fff0e6]">
-        <div className="border border-dashed border-[#f7941d] rounded-md p-6 flex flex-col md:flex-row gap-6">
+      <div className="w-full mx-auto p-6 bg-[#ebf4fe]">
+        <div className="border border-dashed border-[#f7941d] rounded-md p-2 flex flex-col md:flex-row gap-20 items-center justify-center">
           <div className="flex flex-col">
             <img
               alt="Young woman with long black hair wearing orange polo shirt with Sunny logo and glasses, smiling and pointing to the right"

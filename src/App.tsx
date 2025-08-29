@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ConsultationForm from "./components/ConsultationForm";
+import News from "./pages/News";
+import NewsDetail from "./pages/NewsDetail";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/consultationform" element={<ConsultationForm />} />
+          <Route path="/category/:slug" element={<News />} />
+          <Route path="/category/:slug/:id" element={<NewsDetail />} />
         </Routes>
       </MainLayout>
     </Router>
