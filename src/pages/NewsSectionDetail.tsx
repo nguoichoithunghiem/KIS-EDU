@@ -1,14 +1,16 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { mockNews } from "../data/mockData";
-import { Calendar, User } from "lucide-react";
+import { mockNewsWithSections } from "../data/mockData";
 import { slugify } from "../utils/formatUrl";
+import { Calendar, User } from "lucide-react";
 
-const NewsDetail: React.FC = () => {
+const NewsSectionDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
-  // tìm tin theo id
-  const newsItem = mockNews.find((news) => news.id.toString() === id);
+  // Tìm tin theo id
+  const newsItem = mockNewsWithSections.find(
+    (news) => news.id.toString() === id
+  );
 
   if (!newsItem) {
     return <div className="p-4">Tin tức không tồn tại.</div>;
@@ -71,7 +73,7 @@ const NewsDetail: React.FC = () => {
         {/* Link quay lại danh mục */}
         <div className="mt-6">
           <Link
-            to={`/tintuc/${slugify(newsItem.category)}`}
+            to={`/duhochanquoc/${slugify(newsItem.category)}`}
             className="text-orange-600 underline"
           >
             ← Quay lại danh mục
@@ -82,4 +84,4 @@ const NewsDetail: React.FC = () => {
   );
 };
 
-export default NewsDetail;
+export default NewsSectionDetail;

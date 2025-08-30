@@ -1,260 +1,245 @@
 import type { News } from "../types";
-export const mockNews: News[] = [
+import type { NewsWithSections } from "../types";
+export const mockNews: NewsWithSections[] = [
   {
     id: 1,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
+    category: "Sự kiện KIS",
+    title:
+      "SUNNY VINH DỰ NHẬN CHỨNG NHẬN ĐỐI TÁC XUẤT SẮC TỪ ĐẠI HỌC HANSUNG – TOP 1",
+    date: "2025-08-29",
     image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
+      "https://duhocsunny.edu.vn/wp-content/uploads/2025/02/taoanhdep_lam_net_anh_17205-2048x1638.jpeg",
+    content:
+      "Đại học HANSUNG – TOP 1 trao tặng chứng nhận ️ĐỐI TÁC XUẤT SẮC️ cho SUNNY. Đánh dấu cột mốc quan trọng trên hành trình khẳng định vị thế và sự uy tín của SUNNY trong lĩnh vực du học Hàn Quốc.",
+    author: "văn trường",
+    sections: [
+      {
+        id: "SUNNY NHẬN CHỨNG NHẬN XUẤT SẮC",
+        title: "1. SUNNY NHẬN CHỨNG NHẬN XUẤT SẮC",
+        content: `Ngày 21/2/2025, SUNNY xin được chia sẻ một tin vui vô cùng lớn, một cột mốc đáng tự hào trên hành trình chắp cánh ước mơ du học Hàn Quốc cho các bạn trẻ Việt Nam: Đại học HANSUNG – một trong những “ngôi sao” của nền giáo dục Hàn Quốc đã trao tặng chứng nhận ️ĐỐI TÁC XUẤT SẮC️ cho Trung tâm du học Hàn Quốc SUNNY.
+       Đây không chỉ là một chứng nhận, mà còn là minh chứng cho sự nỗ lực không ngừng nghỉ, sự tận tâm và chuyên nghiệp mà SUNNY đã và đang mang đến cho hàng ngàn học sinh, sinh viên trên con đường chinh phục giấc mơ du học hơn suốt hơn 6 năm qua. `,
+      },
+      {
+        id: "HANSUNG – TRƯỜNG TOP 1 THƯ MỜI",
+        title: "2. HANSUNG – TRƯỜNG TOP 1 THƯ MỜI",
+        content: `HANSUNG, điểm đến lý tưởng cho các bạn Sunnier.  Không chỉ nổi tiếng về chất lượng đào tạo đạt tiêu chuẩn cao, môi trường học tập, phát triển lý tưởng mà trường còn nổi tiếng về:
+
+Nhiều chính sách ưu đãi HỌC BỔNG dành cho sinh viên quốc tế (đặc biệt là học viên của SUNNY),… 
+Nằm trong danh sách 100 trường đại học chất lượng cao tại Hàn.
+Thế mạnh về: Giáo dục văn hóa và ngôn ngữ Hàn, chuyên ngành Kinh tế, Giải trí truyền thông, chuyên ngành Làm đẹp, Phần mềm,…
+Với chứng nhận đối tác xuất sắc từ Đại học HANSUNG, SUNNY cam kết sẽ tiếp tục nỗ lực hết mình để mang đến những dịch vụ tư vấn du học chất lượng, giúp các bạn trẻ Việt Nam hiện thực hóa ước mơ du học Hàn Quốc.`,
+      },
+    ],
   },
   {
     id: 2,
-    title: "Đề xuất Hà Nội, TP HCM kiểm định khí thải xe máy từ 1/7/2027",
-    content: `Việc kiểm định khí thải xe máy tại Hà Nội, TP HCM có thể thực hiện từ 1/7/2027, lùi 6 tháng so với đề xuất trước đó.
-Tại dự thảo quyết định của Thủ tướng về lộ trình áp dụng quy chuẩn kỹ thuật quốc gia về khí thải xe máy của Bộ Nông nghiệp và Môi trường, đang được Bộ Tư pháp thẩm định, việc kiểm định khí thải xe máy tại các tỉnh, thành phố lùi 6 tháng so với bản thảo đưa ra trước đó.
-Cụ thể, xe máy tại Hà Nội, TP HCM được kiểm định từ 1/7/2027. Hải Phòng, Huế, Đà Nẵng và Cần Thơ thực hiện kiểm định từ 1/7/2028. Các tỉnh còn lại thực hiện hai năm sau đó.
-Dự thảo cũng đề xuất việc áp dụng các tiêu chuẩn khí thải theo niên hạn xe môtô và xe máy, chia theo 4 mức. Với môtô, các xe sản xuất trước năm 2008 phải đáp ứng chuẩn khí thải mức 1. Xe sản xuất trong giai đoạn 2008-2016 cần đạt chuẩn mức 2.`,
-    author: "Trần Thị B",
-    date: "2025-08-28T11:30:00Z",
-    image:
-      "https://i1-kinhdoanh.vnecdn.net/2025/08/29/saule-JPG-9905-1756454743.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=s5MEFUdygoceQcf4q6Icbg",
-    category: "Kinh doanh",
-  },
-  {
-    id: 3,
-    title: "Đội tuyển Việt Nam thắng Thái Lan 3-0",
-    content:
-      "Đội tuyển Việt Nam đã có màn trình diễn xuất sắc trong trận đấu với Thái Lan, giành chiến thắng thuyết phục 3-0 và tiếp tục giữ ngôi đầu bảng tại vòng loại World Cup.",
-    author: "Lê Văn C",
-    date: "2025-08-27T19:45:00Z",
-    image:
-      "https://i1-thethao.vnecdn.net/2025/08/29/messi-PNG-1756408692-5269-1756408788.png?w=680&h=0&q=100&dpr=1&fit=crop&s=AV9QJwVBhtIseYT5g6Q_qQ",
-    category: "Thể thao",
-  },
-  {
-    id: 4,
-    title: "Nhạc sĩ Phạm Tuyên trao tặng bài 'Như có Bác trong ngày đại thắng'",
-    content: `Tại buổi lễ bàn giao, nhạc sĩ được người thân đưa đến. Ở tuổi 95, do sức khỏe yếu, ông ngồi xe lăn, không phát biểu. Con gái ông, nhà báo Hồng Tuyến, thay bố nói về nguyện vọng: 
-    "Cha tôi luôn giữ tâm niệm: Âm nhạc chỉ thật sự sống khi nó thuộc về cộng đồng. Quyết định tặng lại bản quyền và quyền sử dụng ca khúc là cách chúng tôi tiếp nối tinh thần ấy, 
-    trao lại tác phẩm cho một cơ quan công lập, có sứ mệnh và năng lực giữ gìn và khai thác không vì mục đích thương mại".
-Chị Tuyến cho biết gia đình chọn báo là đơn vị tiếp nhận ca khúc, do nhạc sĩ có kỷ niệm gắn bó. Bài Như có Bác trong ngày đại thắng được ông hoàn thành trong đêm 28/4/1975, phát lần đầu trên 
-Đài Tiếng nói Việt Nam lúc 17h5' ngày 30/4/1975. Chỉ hai ngày sau chiến thắng, nhạc phẩm được in trên báo Nhân Dân, số ra ngày 2/5/1975. Các trang báo đưa ca khúc đến khắp các tỉnh, dần trở nên quen thuộc.`,
-    author: "Phạm Thị D",
-    date: "2025-08-26T14:20:00Z",
-    image:
-      "https://i1-giaitri.vnecdn.net/2025/08/29/nha-c-si-pha-m-tuye-n-17564639-3460-1140-1756464682.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=dvE8YeiIACksBowZuBulOA",
-    category: "Giải trí",
-  },
-  {
-    id: 5,
-    title: "Hà Nội khai trương tuyến metro mới",
-    content:
-      "Tuyến metro số 3 chính thức đi vào hoạt động, giúp giảm tải ùn tắc giao thông và mang lại trải nghiệm hiện đại cho người dân thủ đô.",
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://i1-vnexpress.vnecdn.net/2025/05/23/NHA-O-XA-HOI-CAN-THO-174801276-3886-3035-1748012940.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=NlDb6OlbYNwOBvatclSf4w",
-    category: "Xã hội",
-  },
-  {
-    id: 6,
-    title:
-      "Muôn kiểu chống nắng của người dân khi xếp hàng nhận chỗ hàng chục tiếng trước giờ tổng duyệt A80",
-    content:
-      "Buổi tổng duyệt diễu binh, diễu hành kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9 (nhiệm vụ A80) diễn ra vào 7h thứ Bảy, ngày 30/8. Tuy nhiên ngay từ sáng ngày 29/8, nhiều người dân đã đổ về các tuyến phố trung tâm túc trực sẵn trước 24h đồng hồ với mong muốn có được vị trí đẹp theo dõi đoàn diễu binh diễu hành di chuyển qua.",
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://kenh14cdn.com/thumb_w/640/203336854389633024/2025/8/29/photoai-1756455288078590911062.jpg",
-    category: "Xã hội",
-  },
-  {
-    id: 7,
-    title: "Khoa học công nghệ đồng hành cùng dân tộc",
-    content:
-      "Khoa học công nghệ đã cùng Việt Nam vượt qua chiến tranh, kiến thiết đất nước và từng bước hội nhập, phát triển, theo Bộ trưởng Khoa học và Công nghệ Nguyễn Mạnh Hùng. Thông điệp được Bộ trưởng nói tại Diễn đàn Tương lai của Khoa học công nghệ, đổi mới sáng tạo và chuyển đổi số, sáng 29/8. Sự kiện được tổ chức trong khuôn khổ Triển lãm thành tựu đất nước 80 năm, tại Đông Anh, Hà Nội. Sự kiện có sự tham gia của các lãnh đạo, nhà khoa học trong và ngoài nước",
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://i1-vnexpress.vnecdn.net/2025/08/29/f239cc353552be0ce743-175645829-2592-4457-1756458386.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=y40wocenlCvTJFVv4uuk-A",
-    category: "Công nghệ",
-  },
-  {
-    id: 8,
-    title: "Khán giả xếp hàng nhận vé 'concert quốc gia'",
-    content:
-      "Một trong những người đầu tiên được vào nhận vé. Anh cho biết đến xếp hàng từ 17h ngày 28/8. Ban tổ chức không thông báo số lượng vé sẽ phát. Chương trình mang tên 80 năm hành trình Độc lập - Tự do - Hạnh phúc, diễn ra tối 1/9 ở Sân vận động Mỹ Đình, dự kiến có 30.000 khán giả. Show quy tụ các nghệ sĩ như Thanh Lam, Mỹ Tâm, Tùng Dương, Đăng Dương. Chương trình được quảng bá là 'concert quốc gia đặc biệt', được mong chờ do là sự kiện âm nhạc lớn cuối cùng trước ngày 2/9.",
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://i1-giaitri.vnecdn.net/2025/08/29/442bc17a0220897ed031-1756435957-1756437123-1756437654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=n2vCdaKCxjS8oDyZofUUCQ",
-    category: "Giải trí",
-  },
-  {
-    id: 9,
-    title: "Ông Nguyễn Văn Đạt dự kiến bán hơn 9% vốn Phát Đạt",
-    content:
-      "Khối cổ phiếu sắp chuyển nhượng trị giá khoảng 2.160 tỷ đồng tính theo giá đóng cửa phiên gần nhất là 24.550 đồng. Sau giao dịch, ông còn hơn 271 triệu cổ phiếu, tương ứng 27,7% vốn của Phát Đạt. Nếu tính thêm sở hữu của Công ty TNHH Phát Đạt Holdings do ông làm Chủ tịch, tỷ lệ nắm giữ là 36,45%.",
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://i1-kinhdoanh.vnecdn.net/2025/08/29/PDR-1756459500-8234-1756459740.png?w=680&h=0&q=100&dpr=1&fit=crop&s=qv1YZvxDpqPnrud-saPscQ",
-    category: "Kinh doanh",
-  },
-  {
-    id: 10,
+    category: "Văn Hóa Hàn Quốc",
     title:
       "[2025] Hướng dẫn đăng ký bảo hiểm y tế cho người nước ngoài ở Hàn Quốc",
-    content: `Trước đây theo luật bảo hiểm y tế của Hàn Quốc cũ thì chỉ có lao động nước ngoài, 
-    hay những người đi làm tại công ty Hàn Quốc mới phải đóng bảo hiểm y tế hàng tháng. 
-    Những người nước ngoài cư trú theo visa theo diện du học sinh, kinh doanh, 
-    hay thăm người thân thì có thể tùy chọn tham gia hoặc không tham gia bảo hiểm địa phương theo khu vực sinh sống.`,
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
+    date: "2025-08-29",
     image:
-      "https://duhocsunny.edu.vn/wp-content/uploads/2021/07/bao-hiem-y-te-quoc-dan-2.jpg",
-    category: "Văn Hóa Hàn Quốc",
-  },
-  {
-    id: 11,
-    title: "Những điều cần biết về Ngày Nhà giáo Hàn Quốc 15/5",
-    content: `Nguồn gốc ngày Nhà giáo Hàn Quốc 15/5 Tương tự như Ngày Nhà giáo Việt Nam 20/11,
-              Ngày Nhà giáo của Hàn Quốc (trong tiếng Hàn là 스승의 날) được tổ chức vào ngày 15/5 hàng năm.
-              Đây là một trong những ngày lễ quan trọng thể hiện truyền thống tôn sư trọng đạo của đất nước này.
-              Nhân ngày Hội chữ thập đỏ thế giới mùng 8 tháng 5 năm 1958, một nhóm thanh niên Hàn Quốc đã tổ chức sự kiện tặng quà tri ân
-              và giúp đỡ các giáo viên gặp khó khăn, đã về hưu hoặc đang bị bệnh. Thông qua sự kiện ý nghĩa đó,
-              nhóm đã đề xuất ý tưởng thành lập một ngày dành riêng cho những nhà giáo.`,
-    author: "Ngô Văn E",
-    date: "2025-08-25T08:10:00Z",
-    image:
-      "https://duhocsunny.edu.vn/wp-content/uploads/2021/05/ngay-nha-giao-han-quoc-1.jpg",
-    category: "Văn Hóa Hàn Quốc",
-  },
+      "https://duhocsunny.edu.vn/wp-content/uploads/2021/07/bao-hiem-cho-nguoi-nuoc-ngoai-o-han-quoc-1.png",
+    content:
+      "Bảo hiểm y tế quốc dân ở Hàn Quốc là loại bảo hiểm do tổng công ty bảo hiểm y tế ban hành. Bạn vẫn còn nhiều băn khoăn và thắc mắc về bảo hiểm y tế quốc dân này. Hôm nay Sunny sẽ giải đáp thắc mắc về hướng dẫn đăng ký bảo hiểm y tế cho người nước ngoài ở Hàn Quốc qua bài viết dưới đây nhé",
+    author: "văn trường",
+    sections: [
+      {
+        id: "Quy định chung về bảo hiểm y tế Hàn Quốc",
+        title: "Quy định chung về bảo hiểm y tế Hàn Quốc",
+        content: `Trước đây theo luật bảo hiểm y tế của Hàn Quốc cũ thì chỉ có lao động nước ngoài, hay những người đi làm tại công ty Hàn Quốc mới phải đóng bảo hiểm y tế hàng tháng. Những người nước ngoài cư trú theo visa theo diện du học sinh, kinh doanh, hay thăm người thân thì có thể tùy chọn tham gia hoặc không tham gia bảo hiểm địa phương theo khu vực sinh sống.
 
-  // tin công nghệ
+Từ 16/7/2019 thì người nước ngoài cư trú 6 tháng trở lên BỊ BẮT BUỘC phải tham gia bảo hiểm y tế tại Hàn Quốc
+
+Đối với du học sinh cư trú trên 6 tháng bắt buộc tham gia bảo hiểm y tế quốc dân vào ngày 01/03/2021. Như vậy du học sinh nước ngoài ( D-2, D-4, người nước ngoài học tập có thể mua bảo hiểm y tế theo khu vực)
+
+Hiện tại theo thống kế tại Hàn Quốc thì có khoảng 400.000 người nước ngoài sẽ tham gia bảo hiểm tại địa phương
+
+Với mức chi phí bảo hiểm hàng tháng tại địa phương từ 110.000 KRW`,
+      },
+      {
+        id: "Lợi ích của bảo hiểm y tế quốc dân",
+        title: "Lợi ích của bảo hiểm y tế quốc dân",
+        content: `Sau đây là một số quyền lợi bảo hiểm y tế cho người nước ngoài ở Hàn Quốc.
+
+Một người trong gia đình tham gia bảo hiểm y tế quốc dân thì cả nhà – những người phụ thuộc được hưởng theo và không mất thêm chi phí
+Khi khám sức khỏe định kỳ thì được chi trả 100% chi phí khám chữa bệnh, ngoài một số bệnh như ung thư thì bảo hiểm chi trả 90%
+Hỗ trợ khi mang thai: đơn thai là 600 won, đa thai là 900 won
+Các chi phí khám chữa bệnh được bảo hiểm chi trả
+– Chi trả 80% đối với điều trị nội trú
+– Chi trả 60% đối với điều trị ngoại trú theo quy định`,
+      },
+      {
+        id: "Những bất lợi khi không đóng bảo hiểm y tế ở Hàn Quốc",
+        title: "Những bất lợi khi không đóng bảo hiểm y tế ở Hàn Quốc",
+        content: `Khi không tham gia bảo hiểm y tế quốc dân thì người nước ngoài không đóng bảo hiểm sẽ phải tự thanh toán toàn bộ các chi phí khám chữa bệnh ở Hàn Quốc, nếu có chậm trễ đóng bảo hiểm y tế thì bạn cũng không được hưởng bất kỳ một ưu đãi nào.
+Nếu bạn chậm đóng bảo hiểm trên 500.000 KRW hoặc chậm phí phạt giao thông trên 100.000 KRW bạn có thể bị gặp hạn chế khi gia hạn visa. Bộ tư pháp và bộ y tế sẽ dựa vào những tình trạng đóng bảo hiểm để xem xét tư cách lưu trú về điều kiện gia hạn visa.`,
+      },
+      {
+        id: "Cách đăng ký tham gia bảo hiểm y tế cho người nước ngoài ở Hàn Quốc",
+        title:
+          "Cách đăng ký tham gia bảo hiểm y tế cho người nước ngoài ở Hàn Quốc",
+        content: `Bảo hiểm y tế được phân chia ra làm hai đối tượng đăng ký đó là bảo hiểm theo nơi làm việc dành cho người đi làm và những người mua bảo hiểm theo khu vực sinh sống.
+
+Bảo hiểm theo nơi làm việc dành cho người đi làm: Người nước ngoài làm việc hợp pháp tại Hàn Quốc đều phải đăng ký tham gia bảo hiểm y tế quốc dân, vậy thì chỉ cần công ty đăng ký cho là đủ
+Bảo hiểm theo khu vực sinh sống: Người nước ngoài cư trú tại Hàn Quốc trên 6 tháng trở nên bắt buộc tham gia bảo hiểm y tế và mang chứng minh thư người nước ngoài đến văn phòng bảo hiểm nơi mình sinh sống để đăng ký tham gia.
+Nếu bạn đã đăng ký tham gia bảo hiểm y tế thì có thể thêm tên người thân trong đình mà không phải đóng thêm bất kỳ một khoản nào.`,
+      },
+    ],
+  },
+];
+
+export const mockNewsWithSections: NewsWithSections[] = [
   {
-    id: 12,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
+    id: 1,
+    category: "Chi phí du học Hàn",
+    title: "Tổng chi phí du học Hàn Quốc 2025 cần bao nhiêu tiền",
+    date: "2025-08-29",
     image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
+      "https://duhocsunny.edu.vn/wp-content/uploads/2024/11/chi-phi-du-hoc-han-quoc-7.jpg",
+    content: "Tóm tắt nội dung chính...",
+    author: "văn trường",
+    sections: [
+      {
+        id: "intro",
+        title: "Tổng chi phí du học Hàn Quốc cần bao nhiêu tiền?",
+        content: `Theo kinh nghiệm của SUNNY thì mức chi phí du học Hàn Quốc chỉ khoảng 180.000.000 – 300.000.000 VND. Chỉ các trường có mức học phí đắt đỏ hoặc 
+        sinh viên đi theo hệ du học nghề thì mới lên đến 300.000.000.
+Chi phí du học Hàn Quốc bậc đại học / thạc sĩ có thể sẽ rẻ hơn mức trung bình 180.000.000 – 220.000.000 VND. 
+Bởi vì lần đầu đóng học phí, bạn sẽ chỉ phải đóng học phí nửa kỳ rồi sang Hàn đóng tiếp và còn có các chương trình học bổng của các trường đại học rất hấp dẫn, 
+giúp bạn tiết kiệm chi phí.`,
+      },
+      {
+        id: "chitiet",
+        title: "Chi tiết chi phí du học Hàn Quốc cần chuẩn bị",
+        content: `Thật khó để có thể đưa ra một con số chính xác bởi vì chi phí du học Hàn Quốc phụ thuộc vào rất nhiều yếu tố như:
+
+Năng lực tiếng Hàn của mỗi người.
+Lựa chọn ngôi trường đăng ký theo học.
+Tiền làm giấy tờ hồ sơ, tiền vé máy bay, kế hoạch chi tiêu sinh hoạt,…
+Tuy nhiên, dưới đây là những thông tin cơ bản nhất về chi phí du học Hàn Quốc mà bạn cần chuẩn bị.`,
+      },
+      {
+        id: "applications",
+        title: "Học tiếng Hàn và thi chứng chỉ tiếng Hàn",
+        content: `Đây là khoản phí du học Hàn Quốc bạn phải trả khi còn ở Việt Nam.
+Chi phí học tiếng Hàn và thi chứng chỉ tiếng Hàn tại Việt Nam thường dao động trong khoảng từ 8 – hơn 20 triệu VND.
+Với các bạn đi du học tiếng thì không yêu cần phải có chứng chỉ TOPIK nhưng vốn tiếng Hàn của bạn phải đảm bảo đủ để giao tiếp khi phỏng vấn với trường và đại sứ quán cũng như trong cuộc sống sinh hoạt thường ngày. Do đó, bạn cần tham gia một khóa học tiếng Hàn cơ bản.
+
+Những bạn đi du học đại học/ thạc sỹ thì yêu cầu tối thiểu là cần phải có TOPIK 3 hoặc 4 trở lên.
+
+Nếu chưa có chứng chỉ Topik bạn vẫn có thể đi du học đại học, thạc sỹ nhưng bạn bắt buộc phải hoàn thành khóa học tiếng tại trường ở Hàn Quốc có chất lượng đào tạo tương đương với trường bạn đăng kí.
+Đến khi bạn có chứng chỉ Topik theo yêu cầu chuyên ngành mà bạn đăng ký thì có thể nộp hồ sơ lên học Cao đẳng, Đại, Thạc sỹ kỳ tháng 3 hoặc tháng 9.
+Học và thi chứng chỉ tiếng Hàn Topik 2 hoặc Klat 2 là khoản tiền không thể thiếu trong chi phí du học nghề tại Hàn Quốc.
+Chứng chỉ tiếng Hàn là điều kiện bắt buộc để bạn được phép sang Hàn du học. Chưa biết tiếng thì bạn phải chi trả cả tiền học và tiền thi, nếu đã có vốn tiếng Hàn đủ để thi thì bạn chỉ mất lệ phí thi chứng chỉ thôi.
+`,
+      },
+      {
+        id: "future",
+        title: "Làm hồ sơ du học Hàn Quốc (xin visa)",
+        content: `Chi phí làm hồ sơ du học Hàn hồ sơ du học Hàn của mỗi trung tâm sẽ có sự chênh lệch khác nhau, nhìn chung là dao động trong khoảng 39.000.000 – hơn 45.000.000 VND. Chi phí xử lý hồ sơ tại SUNNY là 39.000.000 VND.
+        Khi đăng ký làm hồ sơ qua các trung tâm có một vấn đề bạn cần lưu ý là làm visa. Ở một số trung tâm thì bạn phải trả riêng tiền làm visa (không nằm trong chi phí làm hồ sơ) nhưng có những trung tâm như SUNNY thì phí xử lý hồ sơ đã bao gồm cả tiền làm visa du học Hàn Quốc.`,
+      },
+    ],
   },
   {
-    id: 13,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
+    id: 2,
+    category: "Học bổng du học Hàn",
+    title:
+      "4 loại học bổng du học Hàn Quốc và 6 lưu ý để chuẩn bị một bộ hồ sơ chỉn chu nhất",
+    date: "2025-08-20",
     image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 14,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 15,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 16,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 17,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 18,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 19,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 20,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 21,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
-  },
-  {
-    id: 22,
-    title: "OpenAI ra mắt GPT-5 với nhiều cải tiến vượt trội",
-    content:
-      "OpenAI vừa công bố GPT-5, phiên bản AI mạnh mẽ với khả năng xử lý văn bản, hình ảnh và âm thanh. Nhiều chuyên gia đánh giá đây sẽ là bước ngoặt lớn trong lĩnh vực trí tuệ nhân tạo.",
-    author: "Nguyễn Văn A",
-    date: "2025-08-28T09:00:00Z",
-    image:
-      "https://i1-sohoa.vnecdn.net/2024/05/14/mira-gpt4o-6566-1715652197.png?w=680&h=0&q=100&dpr=1&fit=crop&s=RtJMQMxES9sleGEFAtBD0w",
-    category: "Công nghệ",
+      "https://i1-vnexpress.vnecdn.net/2025/08/29/20250722-003720-6974-1756439501.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=rjJz6JxDZhRzfcRUEWgy3Q",
+    content: `Học bổng du học Hàn Quốc là niềm mơ ước của biết bao bạn trẻ đã trót “phải lòng” đất nước xinh đẹp và lãng mạn này. Thế nhưng không gia đình bạn nào cũng có đủ khả năng để đi được du học. Vậy làm thế nào để biến giấc mơ đó thành hiện thực?
+
+Tất tần tật những thông tin về học bổng du học Hàn dưới đây sẽ giúp bạn không nhỏ trên hành trình tìm kiếm và săn học bổng thành công. Hãy cùng tham khảo nhé!`,
+    author: "văn trường",
+    sections: [
+      {
+        id: "what-is-blockchain",
+        title: "Xin học bổng du học Hàn Quốc có khó không?",
+        content: `Với những bạn muốn đi du học nhưng không có tiền thì phương án khả thi nhất chính là săn học bổng phải không nào?
+
+Cũng giống như tất cả các bạn du học sinh khác, các bạn đi du học Hàn Quốc luôn băn khoăn, lo lắng, không biết xin học bổng có khó không.
+
+Thật ra, câu trả lời tùy thuộc vào cảm quan của mỗi người, có thể dễ đối với bạn này, nhưng lại là khó với những bạn khác.
+Có rất nhiều các chương trình học bổng từ nhà trường, các tổ chức thậm chí cả học bổng từ chính phủ với mức hỗ từ 30% – 100%
+Nền giáo dục đa dạng, chất lượng đào tạo tốt nhưng chi phí lại rất phải chăng.
+Cơ sở vật chất tân tiến phù hợp với chương trình đào tạo của sinh viên
+Hàn Quốc đang là đất nước có nền kinh tế phát triển mạnh mẽ nên cơ hội làm việc rất lớn (Sau 6 tháng nhập học thì sinh viên có thể bắt đầu đi làm thêm…
+Theo Trung tâm Du học SUNNY, điều quan trọng nhất là bạn phải tìm hiểu kĩ càng về các chương trình học bổng du học Hàn Quốc.
+
+Chẳng hạn, bạn muốn săn học bổng du học Hàn Quốc ngành kinh tế, điều đầu tiên là bạn phải tìm hiểu thông tin về các chương trình học bổng ngành kinh tế(tổ chức nào, trường nào có học bổng).
+
+Sau đó, so sánh điều kiện nhận học bổng giữa các chương trình và tìm ra loại học bổng phù hợp nhất với bản thân. Chỉ khi nắm chắc thông tin, bạn mới nắm chắc được phần thắng trong tay.
+
+>> Click xem chi tiết về điều kiện, chi phí du học Hàn Quốc mới nhất`,
+      },
+      {
+        id: "how-it-works",
+        title: "Các loại học bổng du học Hàn Quốc cho du học sinh Việt Nam",
+        content: `Các bạn du học sinh Việt Nam có thể săn các loại học bổng du học Hàn Quốc sau:
+
+Học bổng của các trường đại học Hàn Quốc
+Học bổng Chính phủ nước Hàn Quốc
+Học bổng của các tổ chức, doanh nghiệp
+Học bổng Giáo sư
+Trong đó, đối với học bổng của các trường đại học thì SUNNY có thể hỗ trợ bạn xin học bổng; các chương trình học bổng còn lại thì bạn có thể tự apply nhưng sẽ không dễ dàng săn được đâu nhé vì số lượng học bổng rất ít và sức cạnh tranh vô cùng cao.
+
+Nếu bạn muốn biết với điểm GPA cũng như trình độ ngoại ngữ của mình có thể xin được loại học bổng nào thì hãy liên lạc với SUNNY để biết thêm thông tin ngay nhé!`,
+      },
+      {
+        id: "Học bổng",
+        title: "Học bổng của các trường đại học Hàn Quốc",
+        content: `So với các chương trình học bổng khác thì học bổng của các trường đại học Hàn Quốc bao giờ cũng dễ săn hơn. Đặc biệt, các bạn học viên của SUNNY còn được chúng mình hỗ trợ xin học bổng, giúp các bạn tiết kiệm một phần học phí.
+
+SUNNY đã xin học bổng thành công cho các bạn:
+
+Bạn Hứa Hoài (Trường đại học Ajou) trị giá 1.400.000 Won (khoảng 28 triệu VND)
+Bạn Lưu Ly (Đại học Soong-Sil) học bổng giảm 70% học phí = 2.589.000 Won (khoảng 52 triệu VND)
+Bạn Phương Thảo (Đại học Kwangwoon) học bổng giảm 80% học phí,…
+Ngoài ra, mỗi năm SUNNY đều tổ chức cuộc thi thường niên “Kế hoạch du học hoàn hảo” và trao học bổng học tiếng Hàn tại các trường Đại học Hàn Quốc cho các bạn thí sinh đạt giải. Đây là cơ hội giúp các bạn tiết kiệm được một khoản học phí không nhỏ đâu đó.
+
+Không ít trường đại học ở Hàn Quốc (kể cả trường công lập và trường tư thục) có các chương trình học bổng đa dạng từ 30% – 100% học phí dành cho du học sinh. Học bổng được xét thường dựa vào một hoặc nhiều yếu tố sau:
+
+Thành tích học tập xuất sắc
+Năng lực ngoại ngữ tốt
+Được khoa đề cử, giáo sư ở các trường đại học nước ngoài, viện nghiên cứu quốc gia và khoa công nhận,…
+Bạn có thể tham khảo thông tin cụ thể về các chương trình học bổng bằng cách truy cập vào website của trường mà bạn muốn săn học bổng du học Hàn Quốc.
+
+Các trường đại học có học bổng được du học sinh săn đón nhiều nhất phải kế đến:
+
+Học bổng của trường đại học Chung Ang
+Học bổng đại học Sejong
+Học bổng của trường đại học Kyung Hee,…
+Lưu ý: Chương trình đào tạo ngành y bậc đại học kéo dài trên 4 năm nên không nằm trong diện Học bổng Chính phủ. Vì vậy, các bạn muốn nhận học bổng du học Hàn Quốc ngành y có thể tìm hiểu loại học bổng này nhé!
+
+Riêng đối với các bạn học viên của SUNNY, trung tâm luôn luôn hỗ trợ và đồng hành cùng các bạn xin học bổng. Nghĩa là, nếu bạn đủ điều kiện nhận học bổng của trường đại học mà bạn đăng ký du học, SUNNY sẽ giúp bạn làm hồ sơ xin học bổng luôn.
+
+Chính vì vậy nếu bạn còn đang thắc mắc học bổng của từng trường cũng như điều kiện để nhận được những học bổng ấy thì hãy liên lạc ngay với SUNNY các bạn nhé!`,
+      },
+      {
+        id: "Học bổng Chính phủ nước Hàn Quốc",
+        title: "Học bổng Chính phủ nước Hàn Quốc",
+        content: `Nếu bạn mong muốn được nhận học bổng du học Hàn Quốc toàn phần thì không thể không tìm hiểu học bổng chính phủ nước Hàn Quốc.
+
+Nhằm mang đến cho các bạn sinh viên đại học, sau đại học, nghiên cứu sinh cơ hội học tập tại Hàn cũng như thúc đẩy giao lưu giáo dục và quan hệ hữu nghị giữa hai nước.
+
+Chỉ tiêu mỗi năm sẽ thay đổi tuỳ theo ngân sách, thông thường là 120 suất học bổng toàn phần du học Hàn Quốc cho các bạn sinh viên Đại học theo chương trình 4 năm và 580 suất sau đại học (gồm học bổng du học thạc sĩ Hàn Quốc + du học tiến sĩ + du học nghiên cứu) cho học sinh của các nước. Các hạng mục học bổng chi trả:
+
+Vé máy bay khứ hồi
+Sinh hoạt phí: 800.000 – 1.500.000 won/ tháng
+Hỗ trợ định cư và tìm nhà: 200.000 won (nhận 1 lần duy nhất)
+Bảo hiểm y tế: 20.000 won/ tháng
+Chi phí học tiếng: 800.000 won/ quý
+Học phí: tối đa 5.000.000 won/ kỳ
+Giải thưởng năng lực tiếng Hàn xuất sắc: 100.000 won/ tháng
+Hỗ trợ nghiên cứu: 210.000 – 240.000 won/ học kỳ
+Chi phí in luận án: 500.000 – 800.000 won
+Hỗ trợ khi kết thúc khóa học: 100.000 won (nhận 1 lần duy nhất)
+Với những bạn nhận được học bổng được Chính phủ đưa ra sẽ được miễn chứng minh tài chính du học Hàn Quốc.
+
+Học bổng Chính phủ của Hàn Quốc có lẽ là học bổng khó săn nhất, sức cạnh tranh cực cao với các điều kiện tương đối khắt khe và khó nhằn:`,
+      },
+    ],
   },
 ];
