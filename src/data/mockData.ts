@@ -1,3 +1,6 @@
+
+import type { Article, News } from "../types";
+export const mockNews: News[] = [
 import type { News } from "../types";
 import type { NewsWithSections } from "../types";
 export const mockNews: NewsWithSections[] = [
@@ -243,3 +246,147 @@ Học bổng Chính phủ của Hàn Quốc có lẽ là học bổng khó săn 
     ],
   },
 ];
+
+
+
+export const mockArticles: Article[] = [
+  {
+    id: 1,
+    title: "Bảng số đếm tiếng Hàn [thuần Hàn, Hán Hàn] cách đọc chi tiết",
+    description:
+      "Khi bắt đầu học tiếng Hàn, bảng chữ cái và bảng chữ số tiếng Hàn là hai “viên gạch” đầu tiên...",
+    views: 81554,
+    image: "https://storage.googleapis.com/a1aa/image/3e9cc041-800c-4962-2ba2-5d5a1fefeedd.jpg",
+    category: "hoc-tieng-han",
+  },
+  {
+    id: 2,
+    title: "Học tiếng Hàn ở trung tâm có được cấp bằng không?",
+    description:
+      "Bảng cấp tiếng Hàn là một trong những yếu tố quan trọng có thể giúp bạn tăng cơ hội việc làm...",
+    views: 1071,
+    image: "https://storage.googleapis.com/a1aa/image/f43b354f-de52-465e-3458-0004260a7faf.jpg",
+    category: "hoc-tieng-han",
+  },
+  {
+    id: 3,
+    title: "Định ngữ trong tiếng Hàn, ví dụ và cách sử dụng từ A – Z",
+    description:
+      "Định ngữ trong tiếng Hàn là kiến thức ngữ pháp quan trọng mà bất kì ai cũng cần nắm được...",
+    views: 52080,
+    image: "https://storage.googleapis.com/a1aa/image/33019fb5-289d-4ead-d296-7816fdcfb822.jpg",
+    category: "hoc-tieng-han",
+  },
+  {
+    id: 4,
+    title: "Không thích tiếng Hàn là gì, cách dùng từ A tới Z",
+    description:
+      "Một trong những phổ biến được dùng nhiều trong giao tiếp là “không thích”...",
+    views: 5915,
+    image: "https://storage.googleapis.com/a1aa/image/076fc953-fbb5-40d5-4aa4-46da5ea27261.jpg",
+    category: "hoc-tieng-han",
+  },
+  {
+    id: 5,
+    title: "Những câu chúc ngủ ngon tiếng Hàn hay nhất",
+    description:
+      "Trong giao tiếp tiếng Hàn cơ bản, chúc ngủ ngon là một câu giao tiếp quan trọng...",
+    views: 2899,
+    image: "https://storage.googleapis.com/a1aa/image/439f0608-b47f-4e49-9dc3-007db9a62973.jpg",
+    category: "hoc-tieng-han",
+  },
+  {
+    id: 6,
+    title: "Hướng dẫn cách nói giờ trong tiếng Hàn chuẩn nhất",
+    description:
+      "Việc nói giờ và điện đắt thời gian là một chủ đề giao tiếp hàng ngày đơn giản...",
+    views: 24545,
+    image: "https://storage.googleapis.com/a1aa/image/33585444-7784-4348-c12a-7e680dfcbfb1.jpg",
+    category: "lich-khai-giang",
+  },
+  {
+    id: 7,
+    title: "Cách nói ngày tháng trong tiếng Hàn dễ nhớ nhất",
+    description:
+      "Ngày tháng là kiến thức cơ bản cần thiết để giao tiếp trong cuộc sống hàng ngày...",
+    views: 17300,
+    image: "https://storage.googleapis.com/a1aa/image/3e9cc041-800c-4962-2ba2-5d5a1fefeedd.jpg",
+    category: "lich-khai-giang",
+  },
+  {
+    id: 8,
+    title: "Các mẫu câu tiếng Hàn giao tiếp thông dụng",
+    description:
+      "Bắt đầu học giao tiếp bằng những mẫu câu đơn giản sẽ giúp bạn tự tin hơn...",
+    views: 32400,
+    image: "https://storage.googleapis.com/a1aa/image/f43b354f-de52-465e-3458-0004260a7faf.jpg",
+    category: "lich-khai-giang",
+  },
+  {
+    id: 9,
+    title: "Ngữ pháp ‘이다’ trong tiếng Hàn – cách dùng và ví dụ",
+    description:
+      "‘이다’ là một trong những ngữ pháp cơ bản mà người học tiếng Hàn phải nắm chắc...",
+    views: 14250,
+    image: "https://storage.googleapis.com/a1aa/image/33019fb5-289d-4ead-d296-7816fdcfb822.jpg",
+    category: "lich-khai-giang",
+  },
+  {
+    id: 10,
+    title: "Số điện thoại trong tiếng Hàn đọc thế nào?",
+    description:
+      "Cách đọc số điện thoại bằng tiếng Hàn thường gây nhầm lẫn cho người mới học...",
+    views: 8900,
+    image: "https://storage.googleapis.com/a1aa/image/076fc953-fbb5-40d5-4aa4-46da5ea27261.jpg",
+    category: "lich-khai-giang",
+  },
+  {
+    id: 11,
+    title: "Các câu chào hỏi cơ bản trong tiếng Hàn",
+    description:
+      "Chào hỏi là kỹ năng cơ bản trong giao tiếp hàng ngày, đặc biệt khi mới làm quen...",
+    views: 19850,
+    image: "https://storage.googleapis.com/a1aa/image/439f0608-b47f-4e49-9dc3-007db9a62973.jpg",
+    category: "lich-thi-topik",
+  },
+  {
+    id: 12,
+    title: "Cách nói thời tiết bằng tiếng Hàn",
+    description:
+      "Một số câu miêu tả thời tiết đơn giản sẽ giúp bạn trò chuyện tự nhiên hơn...",
+    views: 13400,
+    image: "https://storage.googleapis.com/a1aa/image/33585444-7784-4348-c12a-7e680dfcbfb1.jpg",
+    category: "lich-thi-topik",
+  },
+  {
+    id: 13,
+    title: "Học phát âm chuẩn tiếng Hàn từ cơ bản đến nâng cao",
+    description:
+      "Phát âm chuẩn là nền tảng để nghe và nói tiếng Hàn hiệu quả...",
+    views: 27890,
+    image: "https://storage.googleapis.com/a1aa/image/3e9cc041-800c-4962-2ba2-5d5a1fefeedd.jpg",
+    category: "lich-thi-topik",
+  },
+  {
+    id: 14,
+    title: "Cách dùng thì hiện tại tiếp diễn trong tiếng Hàn",
+    description:
+      "Thì hiện tại tiếp diễn được dùng để mô tả hành động đang xảy ra tại thời điểm nói...",
+    views: 7400,
+    image: "https://storage.googleapis.com/a1aa/image/f43b354f-de52-465e-3458-0004260a7faf.jpg",
+    category: "lich-thi-topik",
+  },
+  {
+    id: 15,
+    title: "Học tiếng Hàn qua phim ảnh – phương pháp hiệu quả",
+    description:
+      "Xem phim Hàn không chỉ để giải trí mà còn giúp bạn học ngôn ngữ một cách tự nhiên...",
+    views: 35900,
+    image: "https://storage.googleapis.com/a1aa/image/33019fb5-289d-4ead-d296-7816fdcfb822.jpg",
+    category: "lich-thi-topik",
+  },
+];
+
+
+
+
