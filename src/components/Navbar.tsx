@@ -5,6 +5,7 @@ import { useState } from "react";
 import { mockNews } from "../data/mockData";
 import { categories } from "../utils/formatUrl";
 import { slugify } from "../utils/formatUrl";
+import { articleCategories } from "../types";
 
 
 const Navbar = () => {
@@ -78,18 +79,21 @@ const Navbar = () => {
               {/* Submenu */}
               <ul
                 className="absolute left-0 top-full mt-2 bg-white/50 text-black shadow-lg opacity-0 invisible 
-                 group-hover:opacity-100 group-hover:visible transition-all duration-200 w-40"
+    group-hover:opacity-100 group-hover:visible transition-all duration-200 w-auto h-auto"
               >
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Giới thiệu
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Tầm nhìn
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Sứ mệnh
-                </li>
+                {articleCategories.map((cat) => (
+                  <li key={cat.slug} className="mt-6">  {/* Thêm margin-top ở đây */}
+                    <Link
+                      to={`/course/${cat.slug}`}
+                      className="px-4 py-3 hover:bg-gray-100 cursor-pointer"
+                    >
+                      {cat.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
+
+
             </li>
             <li className="relative group cursor-pointer select-none">
               <div className="flex items-center">
