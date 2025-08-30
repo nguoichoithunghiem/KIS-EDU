@@ -1,4 +1,5 @@
 import { mockNews } from "../data/mockData";
+import { mockNewsWithSections } from "../data/mockData";
 export const slugify = (str: string) =>
   str
     .toLowerCase()
@@ -8,6 +9,9 @@ export const slugify = (str: string) =>
     .replace(/[^a-z0-9-]/g, ""); // xóa ký tự đặc biệt
 
 export const categories = Array.from(new Set(mockNews.map((n) => n.category)));
+export const categoriesNewsSection = Array.from(
+  new Set(mockNewsWithSections.map((n) => n.category))
+);
 
 // Hàm map ngược từ slug -> category gốc
 export const getCategoryNameFromSlug = (slug: string, categories: string[]) => {

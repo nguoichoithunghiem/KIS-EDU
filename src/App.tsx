@@ -7,6 +7,8 @@ import ConsultationForm from "./components/ConsultationForm";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import Course from "./pages/course"; // 👈 thêm import mới
+import NewsSection from "./pages/NewsSection";
+import NewsSectionDetail from "./pages/NewsSectionDetail";
 
 const App = () => {
   return (
@@ -21,6 +23,13 @@ const App = () => {
           <Route path="/category/:slug/:id" element={<NewsDetail />} />
           <Route path="/course" element={<Course />} /> {/* 👈 thêm route */}
           <Route path="/course/:slug" element={<Course />} />
+          <Route path="/tintuc/:slug" element={<News />} />
+          <Route path="/tintuc/:slug/:id" element={<NewsDetail />} />
+          <Route path="/duhochanquoc/:slug" element={<NewsSection />} />
+          <Route
+            path="/duhochanquoc/:slug/:id"
+            element={<NewsSectionDetail />}
+          />
         </Routes>
       </MainLayout>
     </Router>

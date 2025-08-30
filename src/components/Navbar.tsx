@@ -4,9 +4,9 @@ import { Search, Menu, X, Phone, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { mockNews } from "../data/mockData";
 import { categories } from "../utils/formatUrl";
+import { categoriesNewsSection } from "../utils/formatUrl";
 import { slugify } from "../utils/formatUrl";
 import { articleCategories } from "../types";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
             <li className="relative group cursor-pointer select-none">
               <div className="flex items-center">
-                DU HỌC SINH HÀN QUỐC
+                DU HỌC HÀN QUỐC
                 <i className="fas fa-chevron-down ml-1 text-xs"></i>
               </div>
 
@@ -59,15 +59,26 @@ const Navbar = () => {
                 className="absolute left-0 top-full mt-2 bg-white/50 text-black shadow-lg opacity-0 invisible 
                  group-hover:opacity-100 group-hover:visible transition-all duration-200 w-40"
               >
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Giới thiệu
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                {categoriesNewsSection.map((cat, index) => (
+                  <li
+                    key={index}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  >
+                    <Link
+                      to={`/duhochanquoc/${slugify(cat)}`}
+                      className="block w-full h-full"
+                    >
+                      {cat}
+                    </Link>
+                  </li>
+                ))}
+
+                {/* <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Tầm nhìn
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Sứ mệnh
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="relative group cursor-pointer select-none">
@@ -112,7 +123,7 @@ const Navbar = () => {
                     className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                   >
                     <Link
-                      to={`/category/${slugify(cat)}`}
+                      to={`/tintuc/${slugify(cat)}`}
                       className="block w-full h-full"
                     >
                       {cat}
@@ -189,10 +200,11 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${openMenu === "sunny" ? "underline decoration-white" : ""
-                    }`}
+                  className={`${
+                    openMenu === "sunny" ? "underline decoration-white" : ""
+                  }`}
                 >
-                  VỀ SUNNY
+                  VỀ KIS
                 </span>
                 {openMenu === "sunny" ? (
                   <ChevronUp size={16} strokeWidth={3} className="text-white" />
@@ -222,8 +234,9 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${openMenu === "duhoc" ? "underline decoration-white" : ""
-                    }`}
+                  className={`${
+                    openMenu === "duhoc" ? "underline decoration-white" : ""
+                  }`}
                 >
                   DU HỌC HÀN QUỐC
                 </span>
@@ -241,7 +254,7 @@ const Navbar = () => {
               {/* Submenu */}
               {openMenu === "duhoc" && (
                 <ul className="pl-4 mt-1 space-y-1 text-sm font-normal text-white/90">
-                  <li className="cursor-pointer">Giới thiệu</li>
+                  <li className="cursor-pointer">aaa</li>
                   <li className="cursor-pointer">Tầm nhìn</li>
                   <li className="cursor-pointer">Sứ mệnh</li>
                 </ul>
@@ -255,8 +268,9 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${openMenu === "daotao" ? "underline decoration-white" : ""
-                    }`}
+                  className={`${
+                    openMenu === "daotao" ? "underline decoration-white" : ""
+                  }`}
                 >
                   ĐÀO TẠO TIẾNG HÀN
                 </span>
@@ -288,8 +302,9 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${openMenu === "tintuc" ? "underline decoration-white" : ""
-                    }`}
+                  className={`${
+                    openMenu === "tintuc" ? "underline decoration-white" : ""
+                  }`}
                 >
                   TIN TỨC
                 </span>
@@ -307,9 +322,19 @@ const Navbar = () => {
               {/* Submenu */}
               {openMenu === "tintuc" && (
                 <ul className="pl-4 mt-1 space-y-1 text-sm font-normal text-white/90">
-                  <li className="cursor-pointer">Giới thiệu</li>
-                  <li className="cursor-pointer">Tầm nhìn</li>
-                  <li className="cursor-pointer">Sứ mệnh</li>
+                  {categories.map((cat, index) => (
+                    <li
+                      key={index}
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    >
+                      <Link
+                        to={`/tintuc/${slugify(cat)}`}
+                        className="block w-full h-full"
+                      >
+                        {cat}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               )}
             </li>
@@ -321,8 +346,9 @@ const Navbar = () => {
                 className="cursor-pointer flex items-center justify-between py-1 w-full"
               >
                 <span
-                  className={`${openMenu === "tuvan" ? "underline decoration-white" : ""
-                    }`}
+                  className={`${
+                    openMenu === "tuvan" ? "underline decoration-white" : ""
+                  }`}
                 >
                   ĐĂNG KÝ TƯ VẤN
                 </span>
